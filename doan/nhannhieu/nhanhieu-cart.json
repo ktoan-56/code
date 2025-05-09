@@ -1,0 +1,92 @@
+[
+    {
+        "id": "Iphone 16 Pro Max 256G",
+        "name": "Iphone 16 Pro Max 256G",
+        "brand": "iPhone",
+        "price": 31390000,
+        "discount": 1000000,
+        "image": "../anh/iphone-15-plus_1__1.webp",
+        "rating": 5
+    },
+    {
+        "id": "16 Pro Max 256G",
+        "name": "Iphone 16 Pro Max 256G",
+        "brand": "iPhone",
+        "price": 31390000,
+        "discount": 1000000,
+        "image": "../anh/iphone-15-plus_1__1.webp",
+        "rating": 5
+    },
+    {
+        "id": "16 Pro Max 256G",
+        "name": "Iphone 16 Pro Max 256G",
+        "brand": "iPhone",
+        "price": 31390000,
+        "discount": 1000000,
+        "image": "../anh/iphone-15-plus_1__1.webp",
+        "rating": 5
+    },
+    {
+        "id": "16 Pro Max 256G",
+        "name": "Iphone 16 Pro Max 256G",
+        "brand": "iPhone",
+        "price": 31390000,
+        "discount": 1000000,
+        "image": "../anh/iphone-15-plus_1__1.webp",
+        "rating": 5
+    },
+    {
+        "id": "Samsung Galaxy S23",
+        "name": "Samsung Galaxy S23 512G",
+        "brand": "Samsung",
+        "price": 35490000,
+        "discount": 2500000,
+        "image": "samsung-galaxy.png",
+        "rating": 5
+    },
+    {
+        "id": "Xiaomi Mi 13 Pro",
+        "name": "Xiaomi Mi 13 Pro 256G",
+        "brand": "Xiaomi",
+        "price": 18990000,
+        "discount": 1200000,
+        "image": "xiaomi.png",
+        "rating": 4
+    },
+    {
+        "id": "Oppo Find X5 Pro",
+        "name": "Oppo Find X5 Pro 256G",
+        "brand": "OPPO",
+        "price": 22990000,
+        "discount": 2000000,
+        "image": "oppo.png",
+        "rating": 4
+    },
+    {
+        "id": "Realme GT 2 Pro 256G",
+        "name": "Realme GT 2 Pro 256G",
+        "brand": "realme",
+        "price": 16990000,
+        "discount": 1500000,
+        "image": "realme.png",
+        "rating": 4
+    },
+    {
+        "id": "Mac",
+        "name": "Macbook Pro 16 M2 Pro",
+        "brand": "ASUS",
+        "price": 16990000,
+        "discount": 1500000,
+        "image": "../anh/laptop/mac/group_524_4_.webp",
+        "rating": 4
+    },
+    {
+        "id": "Mac",
+        "name": "Macbook Pro 16 M2 Pro",
+        "brand": "Mac realme",
+        "price": 16990000,
+        "discount": 1500000,
+        "image": "../anh/laptop/mac/group_524_4_.webp",
+        "rating": 4
+    }
+]

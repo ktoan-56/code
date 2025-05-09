@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch Quảng Nam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Top bar */
+        .top-bar {
+            background-color: #c66c0d;
+            color: white;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .date-time, .language-selector {
+            display: flex;
+            align-items: center;
+        }
+        
+        .language-selector select {
+            margin: 0 10px;
+            padding: 2px;
+        }
+        
+        .login-btn {
+            background-color: #c66c0d;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+        
+        /* Header */
+        .logo-container {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 180px;
+        }
+        
+        /* Main navigation */
+        .main-nav {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-nav li {
+            padding: 15px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        /* Secondary navigation */
+        .secondary-nav {
+            display: flex;
+            background-color: #f18e21;
+        }
+        
+        .secondary-nav div {
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background-image: url('/images/banner.jpg');
+            background-size: cover;
+        }
+        
+        /* Content area */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 20px;
+            color: #c66c0d;
+        }
+        
+        .breadcrumb a {
+            color: #c66c0d;
+            text-decoration: none;
+        }
+        
+        .news-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .main-news {
+            width: 70%;
+        }
+        
+        .sidebar {
+            width: 28%;
+        }
+        
+        .news-item {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+        
+        .news-image {
+            width: 30%;
+            margin-right: 20px;
+        }
+        
+        .news-content {
+            width: 70%;
+        }
+        
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #c66c0d;
+            margin-bottom: 10px;
+        }
+        
+        .news-date {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .search-box {
+            margin-bottom: 20px;
+            display: flex;
+        }
+        
+        .search-box input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .search-box button {
+            background-color: #f18e21;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        .itinerary-section {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .itinerary-title {
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-weight: bold;
+            color: #c66c0d;
+            border-bottom: 2px solid #c66c0d;
+        }
+        
+        .itinerary-content {
+            padding: 15px;
+        }
+        
+        .itinerary-image {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .itinerary-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        /* Social media sidebar */
+        .social-sidebar {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        /* menu con */
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+        
+        .facebook { background-color: #3b5998; }
+        .instagram { background-color: #c32aa3; }
+        .zalo { background-color: #0068ff; }
+        .youtube { background-color: #ff0000; }
+        .twitter { background-color: #1da1f2; }
+        .tiktok { background-color: #000000; }
+
+/* phần chỉnh sửa hình ảnh lớn (chuyển qua chuyển lại) */
+        .product-carousel {
+            margin-bottom: 20px;
+            margin-top: -25px;
+        }
+        
+        .product-carousel .carousel-item {
+            height: 500px; /* Điều chỉnh chiều cao theo nhu cầu */
+            background-color: #f8f9fa;
+            
+        }
+        
+        .product-carousel .carousel-item img {
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .product-carousel .carousel-indicators {
+            bottom: -50px;
+        }
+    
+        
+        .product-carousel .carousel-indicators button.active {
+            border-color: #d70018;
+        }
+        
+
+
+        .product-section {
+            display: flex;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        
+        .product-gallery {
+            flex: 1.5;
+        }
+        
+        .main-image {
+            border: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .main-image img {
+            
+            height: auto;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- menu -->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+        </div>
+    
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Trang chủ</a></li>
+            <li><a href="#" class="nav-link px-2">Tin tức</a></li>
+          
+            <li class="nav-item dropdown">
+                <a class="nav-link px-2" href="#" id="diemdulichDropdown" role="button">
+                    Điểm du lịch
+                </a>
+              <ul class="dropdown-menu" aria-labelledby="diemdulichDropdown">
+                <div style="display: flex;">
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                </div>
+              </ul>
+            </li>
+          
+            <li><a href="#" class="nav-link px-2">Tour</a></li>
+            <li><a href="#" class="nav-link px-2">Ẩm thực</a></li>
+            <li><a href="#" class="nav-link px-2">Phương tiên</a></li>
+            <li><a href="#" class="nav-link px-2">Tiện ích</a></li>
+          </ul>
+          
+    
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">Login</button>
+          
+        </div>
+      </header>
+
+    <!-- hình ảnh chuỷen qua chuyển lại -->
+   
+      <section class="product-section">
+
+        <div class="product-gallery" >
+            <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+    
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/hinh-anh-thien-nhien-hung-vi.jpg" class="d-block w-100" alt="iPhone 16 Pro Max">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="Titan tự nhiên">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="Titan xanh">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="Titan trắng">
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+
+    <!-- phần chính -->
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="#">Trang chủ</a> » <a href="#">Tin tức</a>
+        </div>
+        
+        <div class="news-section">
+            <div class="main-news">
+                <h2>Tin tức</h2>
+                
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="/images/hoi-an-news.jpg" alt="Hội An" width="100%">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">
+                            Hội An vào tốp 10 điểm đến trong nước được khách Việt tìm kiếm nhiều nhất dịp lễ 30/4
+                        </div>
+                        <div class="news-date">
+                            <i class="fa fa-calendar"></i> 14/04/2025
+                        </div>
+                        <div class="news-summary">
+                            Hội An lọt vào tốp 10 điểm đến trong nước được khách Việt tìm kiếm nhiều nhất dịp 30/4 - 1/5 do nền tảng du lịch trực tuyến hàng đầu thế giới Booking.com vừa công bố. Đông đảo khách nội địa trải nghiệm trò chơi bài chòi tại phố cổ Hội An dịp Giỗ Tổ Hùng Vương v...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="/images/quang-nam-event.jpg" alt="Quảng Nam" width="100%">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">
+                            Quảng Nam đẩy mạnh quảng bá, xúc tiến du lịch tại Hà Nội
+                        </div>
+                        <div class="news-date">
+                            <i class="fa fa-calendar"></i> 10/04/2025
+                        </div>
+                        <div class="news-summary">
+                            Hội chợ Du lịch Quốc tế VITM - Hà Nội 2025 diễn ra từ ngày 10-13/4/2025 tại Trung tâm triển lãm Quốc tế (I.C.E Hanoi), Cung Văn hóa Hữu Nghị, 91 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội. Năm 2025, với chủ đề "Phát triển điểm đến Xanh, nâng tầm Du lịch Việt Nam" nh...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                
+                <div class="itinerary-section">
+                    <div class="itinerary-title">
+                        Lịch trình của bạn
+                    </div>
+                    <div class="itinerary-content">
+                        <img src="/images/hoi-an-itinerary.jpg" alt="Hội An" class="itinerary-image">
+                        <h3>Một ngày ở Hội An</h3>
+                        <div class="itinerary-info">
+                            <div>Số ngày</div>
+                            <div>1 Ngày</div>
+                        </div>
+                        <div class="itinerary-info">
+                            <div>Số địa điểm</div>
+                            <div>10 Địa điểm</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="itinerary-section">
+                    <img src="/images/hoi-an-duy-xuyen.jpg" alt="Hội An - Duy Xuyên" width="100%">
+                    <div class="itinerary-content">
+                        <h3>Hội An - Duy Xuyên</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="social-sidebar">
+        <div class="social-icon facebook">f</div>
+        <div class="social-icon instagram">i</div>
+        <div class="social-icon zalo">z</div>
+        <div class="social-icon youtube">y</div>
+        <div class="social-icon twitter">t</div>
+        <div class="social-icon tiktok">T</div>
+    </div>
+    
+    
+    <div id="back-to-top" style="position: fixed; right: 20px; bottom: 20px; width: 40px; height: 40px; background-color: #c66c0d; color: white; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+        <span>↑</span>
+    </div>
+    
+    
+    <div id="chat-button" style="position: fixed; right: 20px; bottom: 70px; width: 50px; height: 50px; background-color: #c66c0d; color: white; display: flex; justify-content: center; align-items: center; border-radius: 50%; cursor: pointer;">
+        <span>💬</span>
+    </div>
+</body>
+</html>

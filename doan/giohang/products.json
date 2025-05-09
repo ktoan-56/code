@@ -1,0 +1,52 @@
+[
+    {
+      "id": "Iphone 16 Pro Max 256G",
+      "name": "Iphone 16 Pro Max 256G",
+      "price": 31390000,
+      "image": "/doan/anh/iphone-15-plus_1__1.webp",
+      "discount": 1000000,
+      "rating": 5
+    },
+    {
+      "id": "Samsung Galaxy S23 512G",
+      "name": "Samsung Galaxy S23 512G",
+      "price": 35490000,
+      "image": "samsung-galaxy.png",
+      "discount": 2500000,
+      "rating": 5
+    },
+    {
+      "id": "Xiaomi Mi 13 Pro 256G",
+      "name": "Xiaomi Mi 13 Pro 256G",
+      "price": 18990000,
+      "image": "xiaomi.png",
+      "discount": 1200000,
+      "rating": 4
+    },
+    {
+      "id": "Oppo Find X5 Pro 256G",
+      "name": "Oppo Find X5 Pro 256G",
+      "price": 22990000,
+      "image": "oppo.png",
+      "discount": 2000000,
+      "rating": 4
+    },
+    {
+      "id": "Realme GT 2 Pro 256G",
+      "name": "Realme GT 2 Pro 256G",
+      "price": 16990000,
+      "image": "realme.png",
+      "discount": 1500000,
+      "rating": 4
+    },
+    {
+      "id": "Mac",
+      "name": "Maxc",
+      "price": 169900080,
+      "image": "realme.png",
+      "discount": 1500000,
+      "rating": 4
+    }
+   
+  ]
+  

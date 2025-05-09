@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch Quảng Nam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            position: relative;
+            min-height: 100vh;
+           
+            background-size: cover;
+            background-position: center;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -24px;
+        }
+
+        section .overlay img {
+          
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        section .container .content {
+            text-align: center;
+            color: #fff;
+        }
+
+        section .container .content h4 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        section .container .content p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        section .container .content .action {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        section .container .content .action .action-1 {
+            padding: 1rem 2rem;
+            background: transparent;
+            color: #fff;
+            border: 3px solid #fff;
+            border-radius: 220px;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s linear;
+        }
+
+        section .container .content .action .action-1:hover {
+            background-color: #fff;
+            color: #000;
+            transition: 0.2s linear;
+        }
+    </style>
+</head>
+<body>
+
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+    </div>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Trang chủ</a></li>
+        <li><a href="#" class="nav-link px-2">Tin tức</a></li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link px-2" href="#" id="diemdulichDropdown" role="button">
+                Điểm du lịch
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="diemdulichDropdown">
+                <div style="display: flex;">
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                    <div>
+                        <li><a class="dropdown-item" href="#">Hội An</a></li>
+                        <li><a class="dropdown-item" href="#">Tam Kỳ</a></li>
+                        <li><a class="dropdown-item" href="#">Nam Giang</a></li>
+                        <li><a class="dropdown-item" href="#">Tây Giang</a></li>
+                    </div>
+                </div>
+            </ul>
+        </li>
+
+        <li><a href="#" class="nav-link px-2">Tour</a></li>
+        <li><a href="#" class="nav-link px-2">Ẩm thực</a></li>
+        <li><a href="#" class="nav-link px-2">Phương tiên</a></li>
+        <li><a href="#" class="nav-link px-2">Tiện ích</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+    </div>
+</header>
+
+<section>
+    <div class="overlay">
+      <img src="image/hinh-anh-thien-nhien-hung-vi.jpg">
+    </div>
+    <div class="container">
+        <div class="content">
+            <h4>Khám Phá Vẻ Đẹp Miền Trung - Tây Nguyên</h4>
+            <p>
+                Hành trình trải nghiệm thiên nhiên, văn hóa và con người nơi dải đất miền Trung nắng gió.
+            </p>
+            <div class="action">
+                <button class="action-1">Tham Gia Ngay 👈</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

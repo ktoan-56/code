@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+           
+            padding: 8px;
+        }
+       
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "left middle middle"
+                "left middle middle";
+            grid-template-columns: 1fr 2fr 2fr; 
+            grid-template-rows: 90px 300px auto; 
+            border: 1px solid black;
+            
+        }
+        .grid-item {
+            
+            font-size: 20px;
+            
+        }
+        .header {
+            grid-area: header;
+         
+           
+           
+        }
+        .left {
+            grid-area: left;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        .middle {
+            padding: 20px;
+            grid-area: middle;
+            background-color: #ffffff;
+
+        }
+        .middle img{
+            width: 120px;
+            float: right;
+            height: auto;
+            margin-right: 10px;
+        }
+        .middle p{
+            text-align: justify;
+        }
+        h3{
+            margin-bottom: 20px;
+        }
+        .header img{
+            width: 2000px;
+            height: 100px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">
+            <img src="image/header.jpg">
+        </div>
+        <div class="grid-item left">
+            <h3 style="text-align: center;" > TIN TỨC</h3>
+            <P>
+               <a href="Tintuc.html">Kinh tế</a><br>
+               <a href="TINTUCchinhtri.html">Chính trị</a>
+            </P>
+        </div>
+        <div class="grid-item middle">
+            <h3 style="text-align: center; font-weight: bold; ">Làm việc trong Bộ... online </h3>
+            <div>
+                <img src="image/middle2.webp">
+                <p>Một lãnh đạo Sở Tài nguyên - Môi trường & Nhà đất Hải Phòng đã "kêu": nếu không đào tạo cán bộ gấp thì không theo kịp quy trình làm việc của Bộ, nhất là áp dụng triệt để công nghệ thông tin trong giải quyết công việc rõ người, rõ việc và khoa học.
+                    Ứng dụng công nghệ nhuần nhuyễn vào công việc
+                    Ông Mai Ái Trực, Bộ trưởng Bộ Tài nguyên - Môi trường (TN&MT)
+                    Từ thời còn làm lãnh đạo tỉnh Bình Định đã áp dụng nhuần nhuyễn công nghệ thông tin trong quản lý điều hành và cũng là người đầu tiên sáng lập ra tờ Bình Định điện tử - một trong những tờ báo điện tử địa phương sớm nhất.
+                 </p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>

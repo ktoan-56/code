@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <title>iPhone 16 Pro Max | CellphoneS</title>
+    <style>
+       
+      
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #C8102E;
+            display: flex;
+            align-items: center;
+            padding: 7.6px 118px;
+            color: white;
+            
+        }
+        .navbar .top a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            padding: 5px 12px;
+            transition: background 0.3s ease, transform 0.2s;
+            border-radius: 8px; 
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(0.9);
+        }
+        .search-box {
+            flex-grow: 1;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .navbar img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .search-box input {
+            width: 100%;
+            padding:8px;
+            border: none;
+            
+            border-radius: 20px;
+            outline: none;
+            font-size: 14px;
+            padding-left: 25px;
+        }
+        .boxshadow{
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            height: 38px;
+        }
+        .icon-text {
+            font-weight: bold;
+        }
+        .spaced-br{
+            margin-bottom: 1px;
+        }
+/*menu bang lon */        
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+        .menu {
+            margin-top: 1px;
+            position: absolute;
+            width: 200px;
+            background-color: white;
+            border-radius: 10px;
+            display: none;
+            color: black;
+            z-index: 1000;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 8px 8px;
+            margin: 0;
+        }
+        .menu ul li {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 4px;
+            gap: 10px;
+        }
+        .menu ul li:hover {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            color: #C8102E;
+            padding: 12px;
+        }
+        .menu-container:hover .menu {
+            display: block;
+        }
+/*menu con */
+        .has-submenu{
+            position: relative;
+        }
+        .submenu-child{
+            position: absolute;
+            display: none;
+            width: auto;
+            padding:15px;
+            background-color: white;
+            left: 96%;
+            top: -18%;
+            border-radius: 10px;
+        
+        }
+        .has-submenu:hover .submenu-child{
+            display: block;
+        }
+        .submenu-child ul li{
+            padding: 2px;
+            color: black;
+            
+        }
+        .submenu-child ul li:hover{
+            padding: 4px;
+            color: #C8102E;
+            
+        }
+
+        .menu1 {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            max-width: 1500px;
+            
+            
+        }
+        .menu-section1 {
+           width: 170px;
+        }
+        .menu-section1 h3{
+            padding-left: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .menu-section1 li{
+            font-size: 14px;
+        }
+        .menu-section1 a{
+            text-decoration: none;
+            color: #333;
+        }
+        
+     /*bodder  thông tin liên hệhệ*/    
+     .footer {
+            display: flex;
+            justify-content: space-around;
+            background: #f9f9f9;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+        .footer-column {
+            width: 25%;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .footer-column p, .footer-column a {
+            margin: 4px 0;
+            font-size: 14px;
+            text-decoration: none;
+            color: #333;
+        }
+        .footer-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .footer-icons img {
+            height: 30px;
+            
+
+        }
+        
+        
+        /* Product Section */
+        .product-section {
+            display: flex;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        
+        .product-gallery {
+            flex: 1.5;
+        }
+        
+        .main-image {
+            border: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .main-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .thumbnail {
+            border: 1px solid #eee;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .thumbnail img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .product-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .rating {
+            color: #ffc107;
+        }
+        
+        .price {
+            font-size: 24px;
+            color: #d70018;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .promo-badge {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .promo-badge span {
+            background-color: #d70018;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        
+        .color-options, .storage-options {
+            margin: 15px 0;
+        }
+        
+        .option-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .options {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .option {
+            border: 1px solid #ddd;
+            padding: 8px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .option.selected {
+            border-color: #d70018;
+            color: #d70018;
+        }
+        
+        .buy-now {
+            background-color: #d70018;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        .buy-now:hover {
+            background-color: #b30012;
+        }
+        
+        /* Product Tabs */
+        .product-tabs {
+            margin: 40px 0;
+        }
+        
+        .tab-headers {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab-header {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .tab-header.active {
+            border-bottom: 2px solid #d70018;
+            color: #d70018;
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            padding: 20px 0;
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+ 
+       
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+            }
+            
+            .header-content {
+                flex-wrap: wrap;
+            }
+            
+            .search-bar {
+                order: 3;
+                margin: 15px 0;
+                width: 100%;
+            }
+        }
+/* hien thi hinh anh */
+        .product-carousel {
+            margin-bottom: 20px;
+        }
+        
+        .product-carousel .carousel-item {
+            height: 500px; /* Điều chỉnh chiều cao theo nhu cầu */
+            background-color: #f8f9fa;
+        }
+        
+        .product-carousel .carousel-item img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .product-carousel .carousel-indicators {
+            bottom: -50px;
+        }
+        
+        .product-carousel .carousel-indicators button {
+            width: 60px;
+            height: 60px;
+            border-radius: 0;
+            margin: 0 5px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+        
+        .product-carousel .carousel-indicators button.active {
+            border-color: #d70018;
+        }
+        
+        .product-carousel .carousel-indicators img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* BUy*/
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 500px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        }
+
+        .close:hover {
+        color: #000;
+        }
+
+        #selectedOptions {
+        margin: 20px 0;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+        }
+
+        #selectedOptions p {
+        margin: 10px 0;
+        font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+<div class="navbar">
+        <a href="trangchu.html" style="text-decoration: none; color: white;"><img style="width: 90px; height: 50px;" src="logo.png" alt="CellphoneS"></a>
+        <div class="menu-container">
+            <div class="top">
+            <a href="#" class="boxshadow">
+                <img src="/doan/anh/category.png" style="width: 22px; height: 22px;">
+                <span class="icon-text">Danh mục</span>
+            </a>
+        </div>
+            <div class="menu">
+                <ul >
+                   <li class="has-submenu">
+                    <span style="font-size: 14px;"><i class='bx bx-mobile-alt'></i>  Điện thoại, Tablet</span>
+                         <div class=" submenu-child" >
+                            <div class="menu1">
+                                <div class="menu-section1">
+                                    <h3>Hãng điện thoại</h3>
+                                    <ul>
+                                        <li><a href="../nhannhieu/nhanhieu.html?brand=iPhone">iPhone</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">OPPO</a></li>
+                                        <li><a href="">realme</a></li>
+                                        <li><a href="">TECNO</a></li>
+                                        <li><a href="">vivo</a></li>
+                                        <li><a href="">Infinix</a></li>
+                                        <li><a href="">Nokia</a></li>
+                                        <li><a href="">Nubia</a></li>
+                                        <li><a href="">Nothing Phone</a></li>
+                                        <li><a href="">Masstel</a></li>
+                                        <li><a href="">Sony</a></li>
+                                        <li><a href="">Itel</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="menu-section1">
+                                    <h3>Điện thoại HOT</h3>
+                                    <ul>
+                                        <li><a href="">iPhone 16 Series</a></li>
+                                        <li><a href="">iPhone 16e</a></li>
+                                        <li><a href="">iPhone 15 Pro Max</a></li>
+                                        <li><a href="">Galaxy S25 Ultra</a></li>
+                                        <li><a href="">Galaxy Z Flip6</a></li>
+                                        <li><a href="">Xiaomi 15</a></li>
+                                        <li><a href="">OPPO Reno13</a></li>
+                                        <li><a href="">Redmi Note 14</a></li>
+                                        <li><a href="">Redmi Note 14 Pro Plus</a></li>
+                                        <li><a href="">Nothing Phone 2A</a></li>
+                                        <li><a href="">Tecno Camon 30S</a></li>
+                                        <li><a href="">Realme 13+ 5G</a></li>
+                                        <li><a href="">Samsung Galaxy M55</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="menu-section1">
+                                    <h3>Hãng máy tính bảng</h3>
+                                    <ul>
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">Huawei</a></li>
+                                        <li><a href="">Lenovo</a></li>
+                                        <li><a href="">Nokia</a></li>
+                                        <li><a href="">Teclast</a></li>
+                                        <li><a href="">Máy đọc sách</a></li>
+                                        <li><a href="">Kindle</a></li>
+                                        <li><a href="">Boox</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="menu-section1">
+                                    <h3>Máy tính bảng HOT</h3>
+                                    <ul>
+                                        <li><a href="">iPad Air M3</a></li>
+                                        <li><a href="">iPad A16</a></li>
+                                        <li><a href="">iPad Air 2024</a></li>
+                                        <li><a href="">iPad Pro 2024</a></li>
+                                        <li><a href="">iPad mini 7</a></li>
+                                        <li><a href="">Galaxy Tab S10 Series</a></li>
+                                        <li><a href="">Galaxy Tab S9 FE 5G</a></li>
+                                        <li><a href="">Xiaomi Pad 7 Pro</a></li>
+                                        <li><a href="">Xiaomi Pad 7</a></li>
+                                        <li><a href="">Huawei Matepad 11.5"S</a></li>
+                                        <li><a href="">Xiaomi Pad SE</a></li>
+                                        <li><a href="">Teclast M50</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                 
+                    <li class="has-submenu">
+                        <span style="font-size: 14px;"><i class='bx bx-laptop'></i>  Laptop</span>
+                        <div class="submenu-child" style="top: -83%";>
+                            <div class="menu1">
+                                <div class="menu-section1">
+                                    <h3>Thương hiệu</h3>
+                                    <ul>
+                                        <li><a href="">Mac</a></li>
+                                        <li><a href="">ASUS</a></li>
+                                        <li><a href="">Lenovo</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">HP</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">LG</a></li>
+                                        <li><a href="">Huawei</a></li>
+                                        <li><a href="">MSI</a></li>
+                                        <li><a href="">Gigabyte</a></li>
+                                        <li><a href="">Vaio</a></li>
+                                        <li><a href="">Masstel</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="menu-section1">
+                                    <h3>Nhu cầu sử dụng</h3>
+                                    <ul>
+                                        <li><a href="">Văn phòng</a></li>
+                                        <li><a href="">Gaming</a></li>
+                                        <li><a href="">Mỏng nhẹ</a></li>
+                                        <li><a href="">Đồ họa - kỹ thuật</a></li>
+                                        <li><a href="">Sinh viên</a></li>
+                                        <li><a href="">Cảm ứng</a></li>
+                                        <li><a href="">Laptop AI</a></li>
+                                        <li><a href="">Mac CTO - Nâng cấp theo cách của bạn <span class="badge hot">HOT</span></a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="menu-section1">
+                                    <h3>Dòng chip</h3>
+                                    <ul>
+                                        <li><a href="">Laptop Core i3</a></li>
+                                        <li><a href="">Laptop Core i5</a></li>
+                                        <li><a href="">Laptop Core i7</a></li>
+                                        <li><a href="">Laptop Core i9</a></li>
+                                        <li><a href="">Apple M1 Series</a></li>
+                                        <li><a href="">Apple M3 Series</a></li>
+                                        <li><a href="">Apple M4 Series</a></li>
+                                        <li><a href="">AMD Ryzen</a></li>
+                                        <li><a href="">Intel Core Ultra</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="menu-section1">
+                                    <h3>Kích thước màn hình</h3>
+                                    <ul>
+                                        <li><a href="">Laptop 12 inch</a></li>
+                                        <li><a href="">Laptop 13 inch</a></li>
+                                        <li><a href="">Laptop 14 inch</a></li>
+                                        <li><a href="">Laptop 15.6 inch</a></li>
+                                        <li><a href="">Laptop 16 inch</a></li>
+                                    </ul>
+                                </div>
+                            </div>                                
+                        </div>
+                    </li>
+
+                    <li class="has-submenu">
+                        <span style="font-size: 14px;"><i class='bx bx-headphone'></i>  Âm thanh</span>
+                        <div class="submenu-child" style="top: -147%">
+                            <div class="menu1">
+                                <div class="menu-section1">
+                                    <h3>Chọn loại tai nghe</h3>
+                                    <ul>
+                                        <li><a href="">Bluetooth</a></li>
+                                        <li><a href="">Chụp tai</a></li>
+                                        <li><a href="">Nhét tai</a></li>
+                                        <li><a href="">Có dây</a></li>
+                                        <li><a href="">Thể thao</a></li>
+                                        <li><a href="">Gaming</a></li>
+                                        <li><a href="">Xem tất cả tai nghe</a></li>
+                                    </ul>
+                                    <h3>Mic</h3>
+                                    <ul>
+                                        <li><a href="">Mic cài áo</a></li>
+                                        <li><a href="">Mic phòng thu, podcast</a></li>
+                                        <li><a href="">Mic livestream</a></li>
+                                        <li><a href="">Micro không dây</a></li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="menu-section1">
+                                    <h3>Hãng tai nghe</h3>
+                                    <ul>
+                                        <li><a href="">Apple</a></li>
+                                        <li><a href="">Sony</a></li>
+                                        <li><a href="">JBL</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Marshall</a></li>
+                                        <li><a href="">Soundpeats</a></li>
+                                        <li><a href="">Bose</a></li>
+                                        <li><a href="">Edifier</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">Huawei</a></li>
+                                        <li><a href="">Sennheiser</a></li>
+                                        <li><a href="">Havit</a></li>
+                                        <li><a href="">Beats</a></li>
+                                        <li><a href="">Nothing <span class="badge new">MỚI</span></a></li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="menu-section1">
+                                    <h3>Chọn theo giá</h3>
+                                    <ul>
+                                        <li><a href="">Tai nghe dưới 200K</a></li>
+                                        <li><a href="">Tai nghe dưới 500K</a></li>
+                                        <li><a href="">Tai nghe dưới 1 triệu</a></li>
+                                        <li><a href="">Tai nghe dưới 2 triệu</a></li>
+                                        <li><a href="">Tai nghe dưới 5 triệu</a></li>
+                                    </ul>
+                                    <h3>Chọn loại loa</h3>
+                                    <ul>
+                                        <li><a href="">Loa Bluetooth</a></li>
+                                        <li><a href="">Loa Karaoke</a></li>
+                                        <li><a href="">Loa kéo</a></li>
+                                        <li><a href="">Loa Soundbar</a></li>
+                                        <li><a href="">Loa vi tính</a></li>
+                                        <li><a href="">Xem tất cả loa</a></li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="menu-section1">
+                                    <h3>Hãng loa</h3>
+                                    <ul>
+                                        <li><a href="">JBL</a></li>
+                                        <li><a href="">Marshall</a></li>
+                                        <li><a href="">Harman Kardon</a></li>
+                                        <li><a href="">Acnos</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Sony</a></li>
+                                        <li><a href="">Arirang</a></li>
+                                        <li><a href="">LG</a></li>
+                                        <li><a href="">Alpha Works</a></li>
+                                        <li><a href="">Edifier</a></li>
+                                        <li><a href="">Bose</a></li>
+                                        <li><a href="">Nanomax</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Sản phẩm nổi bật</h3>
+                                    <ul>
+                                        <li><a href="">AirPods 4</a></li>
+                                        <li><a href="">AirPods Pro 2</a></li>
+                                        <li><a href="">Galaxy Buds 3 pro</a></li>
+                                        <li><a href="">JBL Tour Pro 3</a></li>
+                                        <li><a href="">Sony WH-1000XM5</a></li>
+                                        <li><a href="">OPPO Enco Air3i - Chỉ có tại CPS</a></li>
+                                        <li><a href="">Redmi Buds 6 Pro</a></li>
+                                        <li><a href="">Onyx Studio 9</a></li>
+                                        <li><a href="">Marshall Willen II</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="has-submenu"> 
+                        <span style="font-size: 14px;"><i class='bx bxs-watch'></i>  Đồng hồ, Camera</span>
+                        <div class="submenu-child" style="top: -212%;">
+                            <div class="menu1">
+
+                                <div class="menu-section1">
+                                    <h3>Loại đồng hồ</h3>
+                                    <ul>
+                                        <li><a href="">Đồng hồ thông minh</a></li>
+                                        <li><a href="">Vòng đeo tay thông minh</a></li>
+                                        <li><a href="">Đồng hồ định vị trẻ em</a></li>
+                                        <li><a href="">Dây đeo</a></li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="menu-section1">
+                                    <h3>Chọn theo thương hiệu</h3>
+                                    <ul>
+                                        <li><a href="">Apple Watch</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">Huawei</a></li>
+                                        <li><a href="">Coros</a></li>
+                                        <li><a href="">Garmin</a></li>
+                                        <li><a href="">Kieslect</a></li>
+                                        <li><a href="">Amazfit</a></li>
+                                        <li><a href="">Black Shark</a></li>
+                                        <li><a href="">Mibro</a></li>
+                                        <li><a href="">Masstel</a></li>
+                                        <li><a href="">imoo</a></li>
+                                        <li><a href="">Kospet</a></li>
+                                        <li><a href="">MyKID</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Sản phẩm nổi bật ⚡</h3>
+                                    <ul>
+                                        <li><a href="">Apple Watch Series 10</a></li>
+                                        <li><a href="">Apple Watch Ultra 2</a></li>
+                                        <li><a href="">Samsung Galaxy Watch 7 <span class="badge hot">HOT</span></a></li>
+                                        <li><a href="">Samsung Galaxy Watch Ultra <span class="badge hot">HOT</span></a></li>
+                                        <li><a href="">Apple Watch SE</a></li>
+                                        <li><a href="">imoo Z1</a></li>
+                                        <li><a href="">Viettel MyKID 4G Lite</a></li>
+                                        <li><a href="">Xiaomi Watch S4 <span class="badge new">MỚI</span></a></li>
+                                        <li><a href="">Huawei Band 10 <span class="badge new">MỚI</span></a></li>
+                                        <li><a href="">Amazfit Active 2</a></li>
+                                        <li><a href="">Huawei Watch Fit 3</a></li>
+                                        <li><a href="">Garmin Instinct E</a></li>
+                                        <li><a href="">Garmin Instinct 3</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Camera</h3>
+                                    <ul>
+                                        <li><a href="">Camera an ninh</a></li>
+                                        <li><a href="">Camera hành trình</a></li>
+                                        <li><a href="">Action Camera</a></li>
+                                        <li><a href="">Camera AI <span class="badge new">MỚI</span></a></li>
+                                        <li><a href="">Gimbal</a></li>
+                                        <li><a href="">Tripod</a></li>
+                                        <li><a href="">Máy ảnh</a></li>
+                                        <li><a href="">Flycam</a></li>
+                                        <li><a href="">Xem tất cả camera</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Camera nổi bật</h3>
+                                    <ul>
+                                        <li><a href="">Camera an ninh Imou</a></li>
+                                        <li><a href="">Camera an ninh Ezviz</a></li>
+                                        <li><a href="">Camera an ninh Xiaomi</a></li>
+                                        <li><a href="">Camera an ninh TP-Link</a></li>
+                                        <li><a href="">Camera Tiandy <span class="badge hot">HOT</span></a></li>
+                                        <li><a href="">Camera DJI</a></li>
+                                        <li><a href="">Camera Insta360</a></li>
+                                        <li><a href="">Máy ảnh Fujifilm</a></li>
+                                        <li><a href="">Máy ảnh Canon <span class="badge hot">HOT</span></a></li>
+                                        <li><a href="">Máy ảnh Sony <span class="badge hot">HOT</span></a></li>
+                                        <li><a href="">Gopro Hero 13</a></li>
+                                        <li><a href="">Flycam dji</a></li>
+                                        <li><a href="">DJI Action 5 Pro</a></li>
+                                        <li><a href="">DJI Action 4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+
+
+                    <li class="has-submenu" >
+                        <span style="font-size: 14px;"><i class='bx bx-devices'></i>  Phụ kiện</span>
+                        <div class="submenu-child" style="top: -276%;">
+                            <div class="menu1">
+
+                                <div class="menu-section1">
+                                    <h3>Phụ kiện di động</h3>
+                                    <ul>
+                                        <li><a href="">Phụ kiện Apple</a></li>
+                                        <li><a href="">Dán màn hình</a></li>
+                                        <li><a href="">Ốp lưng - Bao da</a></li>
+                                        <li><a href="">Thẻ nhớ</a></li>
+                                        <li><a href="">Apple Care+</a></li>
+                                        <li><a href="">Samsung Care+</a></li>
+                                        <li><a href="">Sim 4G</a></li>
+                                        <li><a href="">Cáp, sạc</a></li>
+                                        <li><a href="">Pin dự phòng</a></li>
+                                        <li><a href="">Phụ kiện điện thoại</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Phụ kiện Laptop</h3>
+                                    <ul>
+                                        <li><a href="">Chuột, bàn phím</a></li>
+                                        <li><a href="">Balo Laptop | Túi chống sốc</a></li>
+                                        <li><a href="">Phần mềm</a></li>
+                                        <li><a href="">Webcam</a></li>
+                                        <li><a href="">Giá đỡ</a></li>
+                                        <li><a href="">Thảm, lót chuột</a></li>
+                                        <li><a href="">Sạc laptop</a></li>
+                                        <li><a href="">Camera phòng họp</a></li>
+                                    </ul>
+                                    <h3>Thiết bị mạng</h3>
+                                    <ul>
+                                        <li><a href="">Thiết bị phát sóng WiFi</a></li>
+                                        <li><a href="">Bộ phát wifi di động</a></li>
+                                        <li><a href="">Bộ kích sóng WiFi</a></li>
+                                        <li><a href="">Xem tất cả thiết bị mạng</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Gaming Gear</h3>
+                                    <ul>
+                                        <li><a href="">PlayStation</a></li>
+                                        <li><a href="">ROG Ally</a></li>
+                                        <li><a href="">MSI Claw</a></li>
+                                        <li><a href="">Bàn phím Gaming</a></li>
+                                        <li><a href="">Chuột chơi game</a></li>
+                                        <li><a href="">Tai nghe Gaming</a></li>
+                                        <li><a href="">Tay cầm chơi game</a></li>
+                                        <li><a href="">Xem tất cả Gaming Gear</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Phụ kiện khác</h3>
+                                    <ul>
+                                        <li><a href="">Dây đeo đồng hồ</a></li>
+                                        <li><a href="">Dây đeo Airtag</a></li>
+                                        <li><a href="">Phụ kiện tiện ích</a></li>
+                                        <li><a href="">Phụ kiện ô tô</a></li>
+                                        <li><a href="">Trạm sạc dự phòng</a></li>
+                                        <li><a href="">Thiết bị định vị</a></li>
+                                    </ul>
+                                    <h3>Thiết bị lưu trữ</h3>
+                                    <ul>
+                                        <li><a href="">Thẻ nhớ</a></li>
+                                        <li><a href="">USB</a></li>
+                                        <li><a href="">Ổ cứng di động</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section1">
+                                    <h3>Phụ kiện hot <span class="badge hot">🔥</span></h3>
+                                    <ul>
+                                        <li><a href="">Ốp lưng iPhone 16</a></li>
+                                        <li><a href="">Dán màn hình iPhone 16</a></li>
+                                        <li><a href="">Ốp lưng S25 Series</a></li>
+                                        <li><a href="">Dán màn hình S25 Series</a></li>
+                                        <li><a href="">Khăn lau màn hình Apple</a></li>
+                                        <li><a href="">Cáp sạc iPhone 15</a></li>
+                                        <li><a href="">Nhẫn thông minh 9Fit</a></li>
+                                        <li><a href="">DJI Air 3</a></li>
+                                        <li><a href="">Săn deal đồng giá</a></li>
+                                    </ul>
+                                </div>
+                        
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="has-submenu">
+                        <span style="font-size: 14px;"><i class='bx bx-desktop'></i> PC,Màn hình, Máy in</span>
+                        <div class="submenu-child" style="top: -340%">
+                            <div class="menu1">
+
+                                <div class="menu-section1">
+                                    <h3>Loại PC</h3>
+                                    <ul>
+                                        <li><a href="">Build PC</a></li>
+                                        <li><a href="">Cấu hình sẵn</a></li>
+                                        <li><a href="">All In One</a></li>
+                                        <li><a href="">PC bộ</a></li>
+                                    </ul>
+                                    <h3>Chọn PC theo nhu cầu</h3>
+                                    <ul>
+                                        <li><a href="">Gaming</a></li>
+                                        <li><a href="">Đồ họa</a></li>
+                                        <li><a href="">Văn phòng</a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Linh kiện máy tính</h3>
+                                    <ul>
+                                        <li><a href="">CPU</a></li>
+                                        <li><a href="">Main</a></li>
+                                        <li><a href="">RAM</a></li>
+                                        <li><a href="">Ổ cứng</a></li>
+                                        <li><a href="">Nguồn</a></li>
+                                        <li><a href="">VGA</a></li>
+                                        <li><a href="">Tản nhiệt</a></li>
+                                        <li><a href="">Case</a></li>
+                                        <li><a href="">Xem tất cả</a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Chọn màn hình theo hãng</h3>
+                                    <ul>
+                                        <li><a href="">ASUS</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">DELL</a></li>
+                                        <li><a href="">LG</a></li>
+                                        <li><a href="">MSI</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">ViewSonic</a></li>
+                                        <li><a href="">Philips</a></li>
+                                        <li><a href="">AOC</a></li>
+                                        <li><a href="">Dahua</a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Chọn màn hình theo nhu cầu</h3>
+                                    <ul>
+                                        <li><a href="">Gaming</a></li>
+                                        <li><a href="">Văn phòng</a></li>
+                                        <li><a href="">Đồ họa</a></li>
+                                        <li><a href="">Lập trình</a></li>
+                                        <li><a href="">Màn hình di động</a></li>
+                                        <li><a href="">Arm màn hình</a></li>
+                                        <li><a href="">Xem tất cả</a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Gaming Gear</h3>
+                                    <ul>
+                                        <li><a href="">PlayStation</a></li>
+                                        <li><a href="">ROG Ally</a></li>
+                                        <li><a href="">Bàn phím Gaming</a></li>
+                                        <li><a href="">Chuột chơi game</a></li>
+                                        <li><a href="">Tai nghe Gaming</a></li>
+                                        <li><a href="">Tay cầm chơi Game</a></li>
+                                        <li><a href="">Xem tất cả</a></li>
+                                    </ul>
+                                    <h3>Thiết bị văn phòng</h3>
+                                    <ul>
+                                        <li><a href="">Máy in</a></li>
+                                        <li><a href="">Phần mềm</a></li>
+                                        <li><a href="">Decor bàn làm việc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="has-submenu" >
+                        <span style="font-size: 14px;"><i class='bx bx-tv'></i> Tivi</span>
+                        <div class="submenu-child" style="top: -405%">
+                            <div class="menu1">
+ 
+                                <div class="menu-section1 ">
+                                    <h3>Chọn theo hãng</h3>
+                                    <ul>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">LG</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">Coocaa</a></li>
+                                        <li><a href="">Sony</a></li>
+                                        <li><a href="">Toshiba</a></li>
+                                        <li><a href="">TCL</a></li>
+                                        <li><a href="">Hisense</a></li>
+                                        <li><a href="">Aqua <span class="new-label">MỚI</span></a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Chọn theo mức giá</h3>
+                                    <ul>
+                                        <li><a href="">Dưới 5 triệu</a></li>
+                                        <li><a href="">Từ 5 - 9 triệu</a></li>
+                                        <li><a href="">Từ 9 - 12 triệu</a></li>
+                                        <li><a href="">Từ 12 - 15 triệu</a></li>
+                                        <li><a href="">Trên 15 triệu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-section1">
+                                    <h3>Chọn theo độ phân giải</h3>
+                                    <ul>
+                                        <li><a href="">Tivi 4K</a></li>
+                                        <li><a href="">Tivi 8K</a></li>
+                                        <li><a href="">Tivi Full HD</a></li>
+                                        <li><a href="">Tivi OLED</a></li>
+                                        <li><a href="">Tivi QLED</a></li>
+                                        <li><a href="">Android Tivi</a></li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="menu-section1">
+                                    <h3>Chọn theo kích thước</h3>
+                                    <ul>
+                                        <li><a href="">Tivi 32 inch</a></li>
+                                        <li><a href="">Tivi 43 inch</a></li>
+                                        <li><a href="">Tivi 50 inch</a></li>
+                                        <li><a href="">Tivi 55 inch</a></li>
+                                        <li><a href="">Tivi 65 inch</a></li>
+                                        <li><a href="">Tivi 70 inch</a></li>
+                                        <li><a href="">Tivi 85 inch</a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Sản phẩm nổi bật ⚡</h3>
+                                    <ul>
+                                        <li><a href="">Tivi Samsung UHD 4K 55 inch</a></li>
+                                        <li><a href="">Tivi NanoCell LG 4K 55 inch</a></li>
+                                        <li><a href="">Tivi LG 4K 55 ich Evo Oled Pose</a></li>
+                                        <li><a href="">Tivi Samsung QLED 4K 65 inch</a></li>
+                                        <li><a href="">Tivi Samsung UHD 4K 65 inch 2024</a></li>
+                                        <li><a href="">Tivi LG 43LM5750PTC FHD 43 inch</a></li>
+                                        <li><a href="">Tivi Xiaomi A 4K 2025 55 inch</a></li>
+                                        <li><a href="">Tivi Coocaa khung tranh QLED 4K 55 inch</a></li>
+                                        <li><a href="">Tivi Coocaa 4K 55 inch 55Y73</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="has-submenu">
+                        <span style="font-size: 14px;"><i class= 'bx bx-gift' ></i> Khuyến mãi</span> 
+                        <div class="submenu-child" style="top:-469%">
+                            <div class="menu1">
+
+                                <div class="menu-section1">
+                                    <h3>Khuyến mãi</h3>
+                                    <ul>
+                                        <li><a href="">Hotsale cuối tuần</a></li>
+                                        <li><a href="">Ưu đãi thanh toán</a></li>
+                                        <li><a href="">Khách hàng doanh nghiệp B2B</a></li>
+                                        <li><a href="">Mua kèm gia dụng giảm 500K <span class="new-label">MỚI</span></a></li>
+                                    </ul>
+                                </div>
+  
+                                <div class="menu-section1">
+                                    <h3>Ưu đãi thành viên</h3>
+                                    <ul>
+                                        <li><a href="">Nâng cấp chính sách Smember 3.0 <span class="new-label">MỚI</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-section1">
+                                    <h3>Ưu đãi sinh viên</h3>
+                                    <ul>
+                                        <li><a href="">Nhập hội S-Student</a></li>
+                                        <li><a href="">Đăng ký S-Student <span class="hot-label">HOT</span></a></li>
+                                        <li><a href="">Laptop giảm đến 400K</a></li>
+                                        <li><a href="">Điện thoại giảm đến 6%</a></li>
+                                        <li><a href="">Loa - tai nghe giảm thêm 5%</a></li>
+                                        <li><a href="">Hàng cũ giảm thêm 10% <span class="hot-label">HOT</span></a></li>
+                                    </ul>
+                                </div>
+ 
+                                <div class="menu-section1">
+                                    <h3>Thu cũ đổi mới giá hời</h3>
+                                    <ul>
+                                        <li><a href="">iPhone 16 Series trợ giá đến 3 triệu</a></li>
+                                        <li><a href="">S25 Series trợ giá 4 triệu</a></li>
+                                        <li><a href="">Xiaomi 15 trợ giá đến 1 triệu</a></li>
+                                        <li><a href="">Laptop trợ giá đến 5 triệu</a></li>
+                                        <li><a href="">Đồng hồ trợ giá đến 1 triệu</a></li>
+                                    </ul>
+                                </div>
+                        
+                            </div>
+                        </div>                     
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-box">
+            <img src="/doan/anh/magnifying-glass.png" style="position: absolute; left: 12px; width: 12px; height: 12px;">
+            <input type="text" placeholder="Bạn cần tìm gì?">
+        </div>
+        <div class="top">
+        <a href="#">
+            
+            <img src="/doan/anh/call.png">
+            <span class="icon-text">Gọi mua hàng<br>1800.2097</span>
+        </a>
+    </div>
+    <div class="top">
+        <a href="cuahang.html">
+            <img src="/doan/anh/store.png">
+            <span class="icon-text item">Cửa hàng<br> gần bạn</span>
+        </a>
+    </div>
+    <div class="top">
+        <a href="../giohang/giohang.html">
+            <img src="/doan/anh/grocery-store.png">
+            <span class="icon-text">Giỏ<br> hàng</span>
+        </a>
+    </div>
+    <div class="top">
+        <a href="dangnhap.html" class="boxshadow">
+            <img src="/doan/anh/user (1).png">
+            <span class="icon-text">Đăng<br>nhập</span>
+        </a>
+    </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="container ">
+        
+        <!-- Product Section -->
+        <section class="product-section">
+
+            <div class="product-gallery" >
+                <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096" alt="Ảnh 1">
+                        </button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096" alt="Ảnh 2">
+                        </button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096" alt="Ảnh 3">
+                        </button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096" alt="Ảnh 4">
+                        </button>
+                    </div>
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="iPhone 16 Pro Max">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="Titan tự nhiên">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="Titan xanh">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096" class="d-block w-100" alt="Titan trắng">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="product-title">iPhone 16 Pro Max</h1>
+                
+                <div class="product-meta">
+                    <div class="rating">★★★★★</div>
+                    <div>10 đánh giá</div>
+                    <div>Đã bán: 50</div>
+                </div>
+                
+                <div class="price">35.990.000₫</div>
+                
+                <div class="promo-badge">
+                    <span>KM</span> Giảm ngay 1.000.000₫ khi mua online
+                </div>
+                
+                <div class="color-options">
+                    <div class="option-title">Màu sắc</div>
+                    <div class="options">
+                        <div class="option selected ">Titan tự nhiên</div>
+                        <div class="option">Titan xanh</div>
+                        <div class="option">Titan trắng</div>
+                        <div class="option">Titan đen</div>
+                    </div>
+                </div>
+                
+                <div class="storage-options">
+                    <div class="option-title">Bộ nhớ</div>
+                    <div class="options">
+                        <div class="option selected">256GB</div>
+                        <div class="option">512GB</div>
+                        <div class="option">1TB</div>
+                    </div>
+                </div>
+                
+                <button class="buy-now">MUA NGAY</button>
+            </div>
+        </section>
+        
+        <!-- Product Tabs -->
+        <section class="product-tabs">
+            <div class="tab-headers">
+                <div class="tab-header active" onclick="openTab('description')">Mô tả sản phẩm</div>
+                <div class="tab-header" onclick="openTab('specs')">Thông số kỹ thuật</div>
+                <div class="tab-header" onclick="openTab('reviews')">Đánh giá</div>
+            </div>
+            
+            <div id="description" class="tab-content active">
+                <h3>iPhone 16 Pro Max - Đỉnh cao công nghệ từ Apple</h3>
+                <p>iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.</p>
+                
+                <h4>Thiết kế sang trọng, chất liệu cao cấp</h4>
+                <p>iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn. Mặt lưng kính cường lực với công nghệ mới giúp hạn chế bám vân tay.</p>
+                
+                <h4>Màn hình Super Retina XDR 6.7 inch</h4>
+                <p>Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà. Viền màn hình được làm mỏng hơn, cho diện tích hiển thị lớn hơn.</p>
+                
+                <h4>Hiệu năng vượt trội với chip A18 Pro</h4>
+                <p>Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước. Khả năng xử lý AI mạnh mẽ với 16 lõi Neural Engine mới.</p>
+            </div>
+            
+            <div id="specs" class="tab-content">
+                <table>
+                    <tr>
+                        <th>Màn hình</th>
+                        <td>6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion</td>
+                    </tr>
+                    <tr>
+                        <th>Chip</th>
+                        <td>Apple A18 Pro 6 nhân</td>
+                    </tr>
+                    <tr>
+                        <th>RAM</th>
+                        <td>8GB</td>
+                    </tr>
+                    <tr>
+                        <th>Bộ nhớ trong</th>
+                        <td>256GB / 512GB / 1TB</td>
+                    </tr>
+                    <tr>
+                        <th>Camera sau</th>
+                        <td>48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)</td>
+                    </tr>
+                    <tr>
+                        <th>Camera trước</th>
+                        <td>12MP</td>
+                    </tr>
+                    <tr>
+                        <th>Pin</th>
+                        <td>4500mAh, hỗ trợ sạc nhanh 30W</td>
+                    </tr>
+                    <tr>
+                        <th>Hệ điều hành</th>
+                        <td>iOS 18</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div id="reviews" class="tab-content">
+                <div class="review">
+                    <div class="reviewer">Nguyễn Văn A</div>
+                    <div class="rating">★★★★★</div>
+                    <div class="review-date">10/10/2024</div>
+                    <div class="review-content">Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình.</div>
+                </div>
+                
+                <div class="review">
+                    <div class="reviewer">Trần Thị B</div>
+                    <div class="rating">★★★★☆</div>
+                    <div class="review-date">08/10/2024</div>
+                    <div class="review-content">Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-column">
+          <h3>Tổng đài hỗ trợ</h3>
+          <p>Gọi mua: <a href="tel:1900232460">1900 232 460</a> (8:00 - 21:30)</p>
+          <p>Khiếu nại: <a href="tel:18001062">1800.1062</a> (8:00 - 21:30)</p>
+          <p>Bảo hành: <a href="tel:1900232464">1900 232 464</a> (8:00 - 21:00)</p>
+        </div>
+        <div class="footer-column">
+          <h3>Về công ty</h3>
+          <p><a href="#">Giới thiệu công ty (MWG.vn)</a></p>
+          <p><a href="#">Tuyển dụng</a></p>
+          <p><a href="#">Gửi góp ý, khiếu nại</a></p>
+        </div>
+        <div class="footer-column">
+          <h3>Thông tin khác</h3>
+          <p><a href="#">Tích điểm Quà tặng VIP</a></p>
+          <p><a href="#">Lịch sử mua hàng</a></p>
+          <p><a href="#">Đăng ký bán hàng CTV chiết khấu cao</a></p>
+          <p><a href="#">Tìm hiểu về mua trả chậm</a></p>
+          <p><a href="#">Chính sách bảo hành</a></p>
+        </div>
+        <div class="footer-column">
+          <h3>Website cùng tập đoàn</h3>
+          <div class="footer-icons">
+            <img src="https://cdn.tgdd.vn/mwgcart/topzone/images/logo-topzone.png" alt="topzone">
+            <img src="https://cdn.tgdd.vn/mwgcart/dmx/graphics/logo.png" alt="Điện Máy Xanh">
+            <img src="https://cdn.tgdd.vn/mwgcart/bachhoaxanh/bhx.png" alt="Bách Hóa Xanh">
+            <img src="https://cdn.tgdd.vn/mwgcart/ankhang/LogoAnKhang.png" alt="An Khang">
+            <img src="https://cdn.tgdd.vn/mwgcart/avakids/images/logo.png" alt="AvaKids">
+            <img src="https://cdn.tgdd.vn/mwgcart/4kfarm/LogoFarm.png" alt="4KFarm">
+            <img src="https://cdn.tgdd.vn/mwgcart/topzone/images/avakidslogo.png" alt="Ava">
+            <img src="https://cdn.tgdd.vn/mwgcart/topzone/images/avafashionlogo.png" alt="Ava Fashion">
+          </div>
+        </div>
+      </div>
+    
+   <script src="animation.js"></script>
+   <script src="truyendulieu.js"></script>
+   
+
+
+<!-- buy  -->
+<div id="purchaseModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Thông tin đơn hàng</h2>
+      <div id="selectedOptions">
+        <!-- Nội dung sẽ được điền bằng JavaScript -->
+      </div>
+      <button id="confirmPurchase" class="buy-now">Xác nhận mua hàng</button>
+    </div>
+  </div>
+  <script src="buy.js"></script>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #337ab7;
+            padding: 10px 20px;
+           
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin: 0 10px;
+            position: relative;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+           
+        }
+        .nav-links a:hover {
+            background-color: white;
+            color: #337ab7;
+            border-radius: 5px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-box button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box button:hover {
+            background-color: #ddd;
+        }
+        
+        /* khi man hinh nho hon 600 */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .nav-links li {
+                margin: 5px 0;
+            }
+        }
+        /* menu lon */
+        .menu{
+            display: none;
+            position: absolute;
+            background-color: #337ab7;
+            top: 100%;
+            left: 0;
+            width: 120px;
+            list-style: none;
+        }
+        .menu-item{
+            padding: 8px;
+            cursor: pointer;   
+        }
+         .menu li a {
+            display: block;
+            color: white;
+            font-size: 16px;
+        }
+        .menu li a:hover {
+            background-color: white;
+            color: #337ab7;
+            border-radius: 5px;
+        }
+        .menu-item:hover .menu{
+            display: block;
+        }
+         /* menu con*/
+         .has-submenu{
+            position: relative;
+        }
+        .submenu-child{
+            display: none;
+        }
+        .submenu-child{
+            position: absolute;
+            display: none;
+            width: auto;
+            padding:auto;
+            background-color: #337ab7;
+            left: 100%;
+            top: 0;
+            list-style: none;
+        
+        }
+        .has-submenu:hover .submenu-child{
+            display: block;
+        }
+        .submenu-child ul li{
+            padding: 2px;
+            color: black;
+            
+        }
+        .submenu-child ul li:hover{
+            padding: 4px;
+            color: #C8102E;
+        }
+         /* menu con2*/
+         .has-submenu2{
+            position: relative;
+        }
+        .submenu-child2{
+            display: none;
+        }
+        .submenu-child2{
+            position: absolute;
+            display: none;
+            width: auto;
+            padding:auto;
+            background-color: #337ab7;
+            left: 100%;
+            top: 0;
+            list-style: none;
+        
+        }
+        .has-submenu2:hover .submenu-child2{
+            display: block;
+        }
+        .submenu-child2 ul li{
+            padding: 2px;
+            color: black;
+            
+        }
+        .submenu-child2 ul li:hover{
+            padding: 4px;
+            color: #C8102E;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul class="nav-links ">
+            <li class="menu-item">
+                <a href="#">Home</a>
+                  <ul class="menu">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li class="has-submenu">
+                      <a href="#">History</a>
+                        <ul class="submenu-child">
+                           <li><a href="#">History</a></li>
+                           <li><a href="#">Overview</a></li>
+                           <li class="has-submenu2">
+                               <a href="#">Team</a>
+                                 <ul class="submenu-child2">
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Team</a></li>
+                                 </ul>
+                            </li>
+                        </ul>
+                
+                    </li>
+                 </ul>
+            </li>
+            <li class="menu-item"><a href="#">About us</a></li>
+            <li class="menu-item"><a href="#">Services</a></li>
+            <li class="menu-item"><a href="#">Contact us</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>Go</button>
+        </div>
+    </div>
+
+</body>
+</html>

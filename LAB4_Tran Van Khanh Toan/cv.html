@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            display:flex;
+        }
+        .box input{
+           
+            width: 250px;
+            height: 10px;
+            padding: 5px;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            margin-left: 5px;
+        }
+  
+    </style>
+</head>
+<body>
+    <h2 style="font-weight: bold;"> Trang góp ý</h2>
+  <div>  <p class="box">
+       <a> Họ và Tên:</a>
+        <input type="text" id="username" required>
+    </p>
+    <p class="box">
+        <a>Địa chỉ email </a>
+        <input type="email" id="email" required>
+    </p>
+    <p class="box">
+      <a> Tiêu đề góp ý</a> 
+        <input type="text"  required>
+    </p>
+    <p class="box">
+      <a>  Số điện thoại </a>
+        <input type="number"  required>
+    </p>
+    <p class="box">
+       <a> Vị trí ứng cử </a>
+        <select>
+            <option>Backend Developer</option>
+            <option>Frontend Developer</option>
+            <option>System Analyst</option>
+            <option>Tester</option>
+            <option>Project Manager</option>
+            <option>Data Engineer</option>
+        </select>
+    </p>
+    <p class="box">
+        <a>  Đính kèm hồ sơ </a>
+          <button><a href="#" style="text-decoration: none;">Chọn tệp</a></button> không có tệp nào được sử dụng
+      </p>
+    <p class="box">
+        <label for="text">Tin nhắn</label>
+     <input type="text" style="height: 140px; display: flex; width: 400px;" id="username" required>
+    </p>
+<button>Gửi thông tin</button>
+    <button> Làm mới</button>
+</div>
+</body>
+</html>

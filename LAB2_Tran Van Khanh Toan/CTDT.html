@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .bold{
+            font-weight:bold;
+        }
+        .roman{
+            list-style-type: upper-roman;
+        }
+        .center{
+            text-align: center;
+        }
+         ol {
+            counter-reset: section;
+            list-style: none;
+            
+         }
+         li{
+            counter-increment: section;
+         }
+         li::before{
+            content: counter(section, upper-roman) ". ";
+         }
+         li ol{
+            counter-reset: subsection;
+            padding-left: 30px;
+         }
+         li ol li {
+            counter-increment: subsection;
+         }
+         li ol li::before {
+            content: counter(subsection,decimal)". ";
+         }
+         hr {
+                width: 60%;
+                height: 3px;
+                background-color: rgb(253, 244, 141);
+                border: none;
+            }
+
+    </style>
+</head>
+<body>
+ <h1 class="bold center">KIẾN THỨC CƠ SỞ NGÀNH </h1>
+ <ol>
+    <li>Nhóm kiến thức cơ sở lập trình
+    <ol>
+        <li>Cấu trúc dữ liệu và giải thuật</li>
+        <li>Cơ sở dữ liệu</li>
+        <li>Lập trình hướng đối tượng</li>
+        <li>Lập trình mạng</li>
+    </ol>
+</li>
+
+<hr>
+
+    <li>Nhómm kiến thưc cơ sở hệ thống
+        <ol>
+            <li>Kiến trúc máy tính</li>
+            <li>Nguyên lý hệ điều hành</li>
+            <li>Mạng máy tính</li>
+            <li>Phân tích và thiết kế hệ thống</li>
+        </ol>
+    </li>
+
+    <li>Nhóm kiến thức cơ sở công nghệ
+        <ol>
+            <li>Thiết kế web</li>
+            <li>Lập trình java</li>
+            <li>lập trình di động</li>
+        </ol>
+    </li>
+</ol>
+</body>
+</html>

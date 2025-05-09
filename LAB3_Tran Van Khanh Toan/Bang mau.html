@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:rgb(247, 239, 239);
+            width: 80%;
+            margin: auto;
+            border-radius: 20px;
+           
+        }
+        h1{
+            text-align: center;
+        }
+        .color-grid{
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .color-box:hover{
+            opacity: 0.7;
+            transform: 0.3s;
+        }
+        .color-box{
+            border: none !important;
+            font-weight: bold;
+            display: flex;
+            height: 50px;
+            border-radius: 30px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .black { background-color: #000000; }
+        .gray { background-color: #808080; }
+        .maroon { background-color: #800000; }
+        .brown { background-color: #660000; }
+        .red { background-color: #FF0033; }
+        .orange { background-color: #FF9900; }
+        .gold { background-color: #FFCC00; }
+        .yellow { background-color: #FFFF00; color: black; }
+        .lightyellow { background-color: #FFFF99; color: black; }
+        .lime { background-color: #CCFF00; color: black; }
+        .green-dark { background-color: #00CC00; }
+        .green-light { background-color: #00FF00; color: black; }
+        .green-neon { background-color: #00FF66; color: black; }
+        .cyan { background-color: #00FFFF; color: black; }
+        .teal { background-color: #00CCCC; }
+        .blue { background-color: #0000FF; }
+        .purple { background-color: #8000FF; }
+        .violet { background-color: #A349A4; }
+        .pink-dark { background-color: #FF0080; }
+        .pink-light { background-color: #FFAEC9; color: black; }
+        .turquoise { background-color: #3699C9; }
+        .olive { background-color: #808000; }
+        .silver { background-color: #C3C3C3; color: black; }
+        .white {  background-color: #FFFFFF; color: black; border: 1px solid #000; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Color Names</h1>
+        <div class="color-grid">
+            <div class="color-box black">Đen #000000</div>
+            <div class="color-box gray">Ghi đá #808080</div>
+            <div class="color-box maroon">Đỏ đun #800000</div>
+            <div class="color-box brown">Nâu #660000</div>
+            <div class="color-box red">Đỏ cờ #FF0033</div>
+            <div class="color-box orange">Cam #FF9900</div>
+            <div class="color-box gold">Vàng đất #FFCC00</div>
+            <div class="color-box yellow">Vàng tươi #FFFF00</div>
+            <div class="color-box lightyellow">Vàng mờ #FFFF99</div>
+            <div class="color-box lime">Vàng chanh #CCFF00</div>
+            <div class="color-box green-dark">Xanh lá đậm #00CC00</div>
+            <div class="color-box green-light">Xanh lá nhạt #00FF00</div>
+            <div class="color-box green-neon">Xanh nõn chuối #00FF66</div>
+            <div class="color-box cyan">Xanh lam #00FFFF</div>
+            <div class="color-box teal">Xanh cổ ban #00CCCC</div>
+            <div class="color-box blue">Xanh nước biển #0000FF</div>
+            <div class="color-box purple">Xanh tím #8000FF</div>
+            <div class="color-box violet">Tím #A349A4</div>
+            <div class="color-box pink-dark">Hồng đậm #FF0080</div>
+            <div class="color-box pink-light">Hồng phấn #FFAEC9</div>
+            <div class="color-box turquoise">Xanh ngọc #3699C9</div>
+            <div class="color-box olive">Xanh rêu #808000</div>
+            <div class="color-box silver">Ghi sáng #C3C3C3</div>
+            <div class="color-box white">Trắng #FFFFFF</div>
+        </div>
+    </div>
+
+</body>
+</html>

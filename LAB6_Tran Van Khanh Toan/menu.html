@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            width: 200px;
+            border: 1px solid #999;
+        }
+        .menu-item {
+            background: #ccc;
+            padding: 10px;
+            border-bottom: 1px solid #999;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .menu-item:hover {
+            background: #bbb;
+        }
+        .menu-item.active {
+            background: #888;
+            color: white;
+        }
+        .menu-item::before {
+            content: "▶";
+            margin-right: 10px;
+        }
+        /* Menu con */
+        .submenu {
+            display: none; 
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            background: #ddd;
+            width: 100%;
+            border: 1px solid #999;
+            z-index: 1000;
+            
+        }
+        .submenu-item {
+            padding: 8px;
+            border-bottom: 1px solid #aaa;
+            cursor: pointer;
+        }
+        .submenu-item:hover {
+            background: #bbb;
+        }
+        .menu-item:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="menu-item">Trang chủ
+            <div class="submenu">
+                <div class="submenu-item">Giới thiệu</div>
+                <div class="submenu-item">Tin tức</div>
+            </div>
+        </div>
+        <div class="menu-item">Sản phẩm
+            <div class="submenu">
+                <div class="submenu-item">Điện thoại</div>
+                <div class="submenu-item">Laptop</div>
+                <div class="submenu-item">Phụ kiện</div>
+            </div>
+        </div>
+        <div class="menu-item">Dịch vụ</div>
+        <div class="menu-item">Liên hệ</div>
+        <div class="menu-item">Đăng ký</div>
+        <div class="menu-item">Đăng nhập</div>
+    </div>
+
+</body>
+</html>

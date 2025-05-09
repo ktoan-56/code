@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComboBox Liên Kết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .link-box {
+            padding: 10px;
+            font-size: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Chọn một trang web để truy cập</h2>
+    <select class="link-box" onchange="window.location.href=this.value">
+        <option value="">-- Chọn liên kết --</option>
+        <option value="http://vku.udn.vn/">VKU</option>
+        <option value="https://developer.mozilla.org/en-US/">Mozilla Developer</option>
+        <option value="https://www.vietnamworks.com/">VietnamWorks</option>
+        <option value="https://genk.vn/">Genk</option>
+    </select>
+</body>
+</html>

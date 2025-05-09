@@ -1,0 +1,323 @@
+{
+    "products": [
+      {
+        "id": "Iphone 16 Pro Max 256G",
+        "name": "Iphone 16 Pro Max 256G",
+        "price": "35.990.000₫",
+        "rating": "★★★★★",
+        "reviewsreviewsCount": 10,
+        "sold": 50,
+        "promo": "Giảm ngay 1.000.000₫ khi mua online",
+        "images": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096"
+        ],
+        "thumbnails": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096"
+        ],
+        "colors": ["Titan tự nhiên", "Xanh Tím", "Titan trắng", "Titan đen"],
+        "storages": ["256GB", "512GB", "1TB"],
+        "description": {
+          "overview": "iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.",
+          "design": "iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn.",
+          "display": "Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà.",
+          "performance": "Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước."
+        },
+        "specs": [
+          { "name": "Màn hình", "value": "6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion" },
+          { "name": "Chip", "value": "Apple A18 Pro 6 nhân" },
+          { "name": "RAM", "value": "8GB" },
+          { "name": "Bộ nhớ trong", "value": "256GB / 512GB / 1TB" },
+          { "name": "Camera sau", "value": "48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)" },
+          { "name": "Camera trước", "value": "12MP" },
+          { "name": "Pin", "value": "4500mAh, hỗ trợ sạc nhanh 30W" },
+          { "name": "Hệ điều hành", "value": "iOS 18" }
+        ],
+        "reviews": [
+          {
+            "name": "Nguyễn Văn A",
+            "rating": "★★★★★",
+            "date": "10/10/2024",
+            "content": "Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình."
+          },
+          {
+            "name": "Trần Thị B",
+            "rating": "★★★★☆",
+            "date": "08/10/2024",
+            "content": "Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi."
+          }
+        ]
+      },
+      {
+        "id": "Samsung Galaxy S23",
+        "name": "Samsung Galaxy S23 512G",
+        "price": "36.990.000₫",
+        "rating": "★★★★★",
+        "reviewsreviewsCount": 10,
+        "sold": 50,
+        "promo": "Giảm ngay 1.000.000₫ khi mua online",
+        "images": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096"
+        ],
+        "thumbnails": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096"
+        ],
+        "colors": ["Titan tự nhiên", "Xanh ngọc", "Xanh Tím", "Titan đen"],
+        "storages": ["256GB", "512GB", "1TB"],
+        "description": {
+          "overview": "iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.",
+          "design": "iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn.",
+          "display": "Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà.",
+          "performance": "Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước."
+        },
+        "specs": [
+          { "name": "Màn hình", "value": "6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion" },
+          { "name": "Chip", "value": "Apple A18 Pro 6 nhân" },
+          { "name": "RAM", "value": "8GB" },
+          { "name": "Bộ nhớ trong", "value": "256GB / 512GB / 1TB" },
+          { "name": "Camera sau", "value": "48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)" },
+          { "name": "Camera trước", "value": "12MP" },
+          { "name": "Pin", "value": "4500mAh, hỗ trợ sạc nhanh 30W" },
+          { "name": "Hệ điều hành", "value": "iOS 18" }
+        ],
+        "reviews": [
+          {
+            "name": "Nguyễn Văn c",
+            "rating": "★★★★★",
+            "date": "10/10/2024",
+            "content": "Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình."
+          },
+          {
+            "name": "Trần Thị B",
+            "rating": "★★★★☆",
+            "date": "08/10/2024",
+            "content": "Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi."
+          }
+        ]
+      },
+      {
+        "id": "Xiaomi Mi 13 Pro",
+        "name": "Xiaomi Mi 13 Pro",
+        "price": "36.990.000₫",
+        "rating": "★★★★★",
+        "reviewsreviewsCount": 10,
+        "sold": 50,
+        "promo": "Giảm ngay 1.000.000₫ khi mua online",
+        "images": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096"
+        ],
+        "thumbnails": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096"
+        ],
+        "colors": ["Titan tự nhiên", "Xanh ngọc", "Xanh Tím", "Titan đen"],
+        "storages": ["256GB", "512GB", "1TB"],
+        "description": {
+          "overview": "iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.",
+          "design": "iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn.",
+          "display": "Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà.",
+          "performance": "Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước."
+        },
+        "specs": [
+          { "name": "Màn hình", "value": "6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion" },
+          { "name": "Chip", "value": "Apple A18 Pro 6 nhân" },
+          { "name": "RAM", "value": "8GB" },
+          { "name": "Bộ nhớ trong", "value": "256GB / 512GB / 1TB" },
+          { "name": "Camera sau", "value": "48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)" },
+          { "name": "Camera trước", "value": "12MP" },
+          { "name": "Pin", "value": "4500mAh, hỗ trợ sạc nhanh 30W" },
+          { "name": "Hệ điều hành", "value": "iOS 18" }
+        ],
+        "reviews": [
+          {
+            "name": "Nguyễn Văn c",
+            "rating": "★★★★★",
+            "date": "10/10/2024",
+            "content": "Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình."
+          },
+          {
+            "name": "Trần Thị B",
+            "rating": "★★★★☆",
+            "date": "08/10/2024",
+            "content": "Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi."
+          }
+        ]
+      },
+      {
+        "id": "Oppo Find X5 Pro",
+        "name": "Oppo Find X5 Pro",
+        "price": "36.990.000₫",
+        "rating": "★★★★★",
+        "reviewsreviewsCount": 10,
+        "sold": 50,
+        "promo": "Giảm ngay 1.000.000₫ khi mua online",
+        "images": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096"
+        ],
+        "thumbnails": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096"
+        ],
+        "colors": ["Titan tự nhiên", "Xanh ngọc", "Xanh Tím", "Titan đen"],
+        "storages": ["256GB", "512GB", "1TB"],
+        "description": {
+          "overview": "iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.",
+          "design": "iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn.",
+          "display": "Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà.",
+          "performance": "Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước."
+        },
+        "specs": [
+          { "name": "Màn hình", "value": "6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion" },
+          { "name": "Chip", "value": "Apple A18 Pro 6 nhân" },
+          { "name": "RAM", "value": "8GB" },
+          { "name": "Bộ nhớ trong", "value": "256GB / 512GB / 1TB" },
+          { "name": "Camera sau", "value": "48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)" },
+          { "name": "Camera trước", "value": "12MP" },
+          { "name": "Pin", "value": "4500mAh, hỗ trợ sạc nhanh 30W" },
+          { "name": "Hệ điều hành", "value": "iOS 18" }
+        ],
+        "reviews": [
+          {
+            "name": "Nguyễn Văn c",
+            "rating": "★★★★★",
+            "date": "10/10/2024",
+            "content": "Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình."
+          },
+          {
+            "name": "Trần Thị B",
+            "rating": "★★★★☆",
+            "date": "08/10/2024",
+            "content": "Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi."
+          }
+        ]
+      },
+      {
+        "id": "Realme GT 2 Pro",
+        "name": "Realme GT 2 Pro",
+        "price": "36.990.000₫",
+        "rating": "★★★★★",
+        "reviewsreviewsCount": 10,
+        "sold": 50,
+        "promo": "Giảm ngay 1.000.000₫ khi mua online",
+        "images": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096"
+        ],
+        "thumbnails": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096"
+        ],
+        "colors": ["Titan tự nhiên", "Xanh ngọc", "Xanh Tím", "Titan đen"],
+        "storages": ["256GB", "512GB", "1TB"],
+        "description": {
+          "overview": "iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.",
+          "design": "iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn.",
+          "display": "Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà.",
+          "performance": "Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước."
+        },
+        "specs": [
+          { "name": "Màn hình", "value": "6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion" },
+          { "name": "Chip", "value": "Apple A18 Pro 6 nhân" },
+          { "name": "RAM", "value": "8GB" },
+          { "name": "Bộ nhớ trong", "value": "256GB / 512GB / 1TB" },
+          { "name": "Camera sau", "value": "48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)" },
+          { "name": "Camera trước", "value": "12MP" },
+          { "name": "Pin", "value": "4500mAh, hỗ trợ sạc nhanh 30W" },
+          { "name": "Hệ điều hành", "value": "iOS 18" }
+        ],
+        "reviews": [
+          {
+            "name": "Nguyễn Văn c",
+            "rating": "★★★★★",
+            "date": "10/10/2024",
+            "content": "Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình."
+          },
+          {
+            "name": "Trần Thị B",
+            "rating": "★★★★☆",
+            "date": "08/10/2024",
+            "content": "Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi."
+          }
+        ]
+      },
+      {
+        "id": "Mac",
+        "name": "mac",
+        "price": "36.990.000₫",
+        "rating": "★★★★★",
+        "reviewsreviewsCount": 10,
+        "sold": 50,
+        "promo": "Giảm ngay 1.000.000₫ khi mua online",
+        "images": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009279096"
+        ],
+        "thumbnails": [
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309_GEO_EMEA?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096",
+          "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-whitetitanium_AV1?wid=240&hei=240&fmt=p-jpg&qlt=95&.v=1693009279096"
+        ],
+        "colors": ["Titan tự nhiên", "Xanh ngọc", "Xanh Tím", "Titan đen"],
+        "storages": ["256GB", "512GB", "1TB"],
+        "description": {
+          "overview": "iPhone 16 Pro Max tiếp tục khẳng định vị thế dẫn đầu trong làng smartphone cao cấp với những nâng cấp ấn tượng về hiệu năng, camera và thiết kế.",
+          "design": "iPhone 16 Pro Max sở hữu thiết kế nguyên khối với khung viền titanium cao cấp, cho độ bền vượt trội cùng trọng lượng nhẹ hơn.",
+          "display": "Màn hình OLED công nghệ mới với độ sáng lên tới 2000 nits, tần số quét 120Hz ProMotion cho trải nghiệm hình ảnh siêu mượt mà.",
+          "performance": "Bộ vi xử lý A18 Pro 3nm mang lại hiệu năng CPU tăng 20%, GPU tăng 30% so với thế hệ trước."
+        },
+        "specs": [
+          { "name": "Màn hình", "value": "6.7 inch, Super Retina XDR, 2796 x 1290 pixels, 120Hz ProMotion" },
+          { "name": "Chip", "value": "Apple A18 Pro 6 nhân" },
+          { "name": "RAM", "value": "8GB" },
+          { "name": "Bộ nhớ trong", "value": "256GB / 512GB / 1TB" },
+          { "name": "Camera sau", "value": "48MP (chính) + 12MP (góc siêu rộng) + 12MP (tele)" },
+          { "name": "Camera trước", "value": "12MP" },
+          { "name": "Pin", "value": "4500mAh, hỗ trợ sạc nhanh 30W" },
+          { "name": "Hệ điều hành", "value": "iOS 18" }
+        ],
+        "reviews": [
+          {
+            "name": "Nguyễn Văn c",
+            "rating": "★★★★★",
+            "date": "10/10/2024",
+            "content": "Sản phẩm tuyệt vời, màn hình đẹp, camera chụp ảnh siêu nét. Nhân viên tư vấn nhiệt tình."
+          },
+          {
+            "name": "Trần Thị B",
+            "rating": "★★★★☆",
+            "date": "08/10/2024",
+            "content": "Máy chạy mượt, pin trâu nhưng giá hơi cao. Nên chờ khuyến mãi."
+          }
+        ]
+      }
+    ]
+  }
+  

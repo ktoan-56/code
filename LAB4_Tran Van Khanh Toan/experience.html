@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinh nghiệm làm việc</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+            position: relative;
+        }
+        h2 {
+            color: #0056b3;
+            display: flex;
+            align-items: center;
+        }
+        h2::before {
+            content: "";
+            width: 5px;
+            height: 20px;
+            background: red;
+            margin-right: 10px;
+            
+        }
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 180px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            height: 60px;
+            resize: vertical;
+        }
+        .btn-group {
+            display: flex;
+            margin-top: 10px;
+        }
+        .btn {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-save {
+            background: red;
+            color: white;
+            margin-right: 10px;
+        }
+        .btn-save:hover {
+            background: darkred;
+        }
+        .btn-save::before {
+            content: "💾";
+            margin-right: 5px;
+        }
+        .btn-cancel {
+            background: #ccc;
+            color: black;
+        }
+        .btn-cancel:hover {
+            background: #bbb;
+        }
+        .btn-cancel::before {
+            content: "❌";
+            margin-right: 5px;
+        }
+        .collapse-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 5px;
+        
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .collapse-btn::after {
+            content: "▲";
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        hr{
+            width: 190px;
+            height: 0px;
+            margin-top: 15px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <div style="display: flex;"> <h2>Kinh nghiệm làm việc <i>(bắt buộc)</i></h2>
+    <hr>
+    <button class="collapse-btn">Rút gọn</button>
+</div> 
+    <p class="description">
+        Hãy liệt kê những công việc, nhiệm vụ mà bạn đã từng đảm nhận và thực hiện. Chú ý liệt kê kinh nghiệm làm việc từ thời gian gần đây nhất trở về trước.
+    </p>
+
+    <div class="form-group">
+        <label>Công ty *</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Chức danh *</label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Thời gian làm việc *</label>
+        <select>
+            <option>Tháng</option>
+        </select>
+        <select>
+            <option>Năm</option>
+        </select>
+        <span style="margin: 0 10px;">đến</span>
+        <select>
+            <option>Tháng</option>
+        </select>
+        <select>
+            <option>Năm</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Mức lương</label>
+        <select>
+            <option>VND</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Mô tả công việc *</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Thành tích đạt được</label>
+        <textarea></textarea>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-save">Lưu</button>
+        <button class="btn btn-cancel">Không lưu</button>
+    </div>
+</div>
+
+</body>
+</html>

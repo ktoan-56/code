@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #1877f2;
+        }
+        input {
+            width: 100%;
+            padding:10px;
+            margin:5px -10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+
+        }
+        select{
+            width: 100%;
+            padding:10px;
+            margin:5px -10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          
+           
+        }
+        .gender {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .gender label {
+            gap: 30px;
+            display: flex;
+            align-items: center;
+            
+            white-space: nowrap;/*ngan xuong hang*/
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 120px;
+            height: 30px;
+            padding-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #42b72a;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký</h2>
+        <form>
+           <div style="display: flex; gap: 30px;">
+            <input type="text" placeholder="Họ" required>
+            <input type="text" placeholder="Tên" required>
+        </div> 
+            <input type="email" placeholder="Số di động hoặc email" required>
+            <input type="password" placeholder="Mật khẩu mới" required>
+            <label>Ngày sinh:</label>
+         <div style="display: flex; gap: 30px;">
+            <select required>
+                <option>17</option>
+            </select>
+            <select required>
+                <option>Tháng 2</option>
+            </select>
+            <select required>
+                <option>2021</option>
+            </select>
+        </div>    
+            <label>Giới tính:</label>
+        
+            <div class="gender">
+                <label> Nữ<input type="radio" name="gender" required></label>
+                <label> Nam<input type="radio" name="gender" required></label>
+                <label>Tùy chỉnh<input type="radio" name="gender" required> </label>
+            </div>
+          <p> <button type="submit">Đăng ký</button></p> 
+        </form>
+    </div>
+</body>
+</html>

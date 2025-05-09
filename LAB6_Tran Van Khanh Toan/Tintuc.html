@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+           
+            padding: 8px;
+        }
+       
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "left middle middle"
+                "left middle middle";
+            grid-template-columns: 1fr 2fr 2fr; 
+            grid-template-rows: 90px 300px auto; 
+            border: 1px solid black;
+            
+        }
+        .grid-item {
+            
+            font-size: 20px;
+            
+        }
+        .header {
+            grid-area: header;
+         
+           
+           
+        }
+        .left {
+            grid-area: left;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        .middle {
+            padding: 20px;
+            grid-area: middle;
+            background-color: #ffffff;
+
+        }
+        .middle img{
+            width: 120px;
+            float: left;
+            height: auto;
+            margin-right: 10px;
+        }
+        .middle p{
+            text-align: justify;
+        }
+        h3{
+            margin-bottom: 20px;
+        }
+        .header img{
+            width: 2000px;
+            height: 100px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">
+            <img src="image/header.jpg">
+        </div>
+        <div class="grid-item left">
+            <h3 style="text-align: center;" > TIN TỨC</h3>
+            <P>
+               <a href="Tintuc.html">Kinh tế</a><br>
+               <a href="TINTUCchinhtri.html">Chính trị</a>
+            </P>
+        </div>
+        <div class="grid-item middle">
+            <h3 style="text-align: center; font-weight: bold; ">Cầm cố chứng khoán: Kênh tạo vốn cho nhà đầu tư? </h3>
+            <div>
+                <img src="image/miđle.jpg">
+                <p>Mới đây UBCKNN đã gửi công văn đề nghị các công ty chứng khoán, ngân hàng kiểm soát chặt giao dịch và cho vay cầm cố mua cổ phiếu, nhằm hạn chế rủi ro.
+                   Giới chuyên môn cho rằng, chưa cần thiết phải lo lắng, bởi chứng khoán tăng là dấu hiệu tốt và vẫn trong tầm kiểm soát. 
+                   Theo UBCKNN, đến ngày 20-3 có khoảng 13 triệu cổ phiếu các loại được cầm cố với tổng giá trị khoảng 751 tỷ đồng. 
+                   Ủy ban đã có yêu cầu phối hợp với Ngân hàng Nhà nước để liên kết quản lý việc cho vay và cầm cố chứng khoán ở các ngân hàng thương mại.
+                 </p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.nen{
+    position: relative; 
+    width: 100%; 
+    height: auto;
+}
+.top{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#C8102E;
+    padding: 10px 10px;
+    margin-top: -6px;
+   
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin: 0 10px;
+    position: relative;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+   
+}
+.nav-links a:hover {
+    background-color: white;
+    color: #337ab7;
+    border-radius: 5px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+}
+.search-box input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+.search-box button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.search-box button:hover {
+    background-color: #ddd;
+}
+
+/* khi man hinh nho hon 600 */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+/* menu lon */
+.menu{
+    display: none;
+    position: absolute;
+    background-color:#C8102E;
+    top: 100%;
+    left: 0;
+    width: 140px;
+    border-radius: 5px;
+    list-style: none;
+}
+.menu-item{
+    padding: 8px;
+    cursor: pointer;   
+}
+ .menu li a {
+    display: block;
+    color: white;
+    font-size: 16px;
+}
+.menu li a:hover {
+    background-color: white;
+    color: #337ab7;
+    border-radius: 5px;
+}
+.menu-item:hover .menu{
+    display: block;
+}
+ /* menu con*/
+ .has-submenu{
+    position: relative;
+}
+.submenu-child{
+    display: none;
+}
+.submenu-child{
+    position: absolute;
+    display: none;
+    width: 130px;
+    border-radius: 5px;
+    padding:auto;
+    background-color:#C8102E;
+    left: 100%;
+    top: 0;
+    list-style: none;
+
+}
+.has-submenu:hover .submenu-child{
+    display: block;
+}
+.submenu-child ul li{
+    padding: 2px;
+    color: black;
+    
+}
+.submenu-child ul li:hover{
+    padding: 4px;
+    color: #C8102E;
+}
+ /* menu con2*/
+ .has-submenu2{
+    position: relative;
+}
+.submenu-child2{
+    display: none;
+}
+.submenu-child2{
+    position: absolute;
+    display: none;
+    width: 130px;
+    padding:auto;
+    background-color:#C8102E;
+    left: 100%;
+    top: 0;
+    list-style: none;
+    border-radius: 5px;
+
+}
+.has-submenu2:hover .submenu-child2{
+    display: block;
+}
+.submenu-child2 ul li{
+    padding: 2px;
+    color: black;
+    
+}
+.submenu-child2 ul li:hover{
+    padding: 4px;
+    color: #C8102E;
+}
+.Top{
+    background-color: aliceblue;
+    width:2000px;
+    height: 100px;
+    color: #C8102E;
+    
+}
+
+.left {
+    display: grid;
+    grid-area: left;
+    background-color: white;
+    
+}
+
+.left img{
+    float: left;
+    width: 100%;
+    
+   
+    max-width: 180px;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* phan cuoi */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+.footer-column {
+    width: 25%;
+}
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.footer-column p, .footer-column a {
+    margin: 4px 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+/* ban quuyen */
+ .banquyen{
+    background-color:  #f9f9f9;
+    text-align: center;
+ }
+ img{
+    width:2000px ;
+    height: 100px;
+     
+ }
